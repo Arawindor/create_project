@@ -1,6 +1,6 @@
 # Create project automator v 1.0
 
-This script provide a full configurator for brand new projects.
+This script provide a full configurator for your own brand new projects.
 
 Git and GitHub setup are included.
 
