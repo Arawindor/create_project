@@ -39,7 +39,7 @@ git remote add origin https://github.com/$github_user/$project_name.git
 git remote -v
 echo -e "\e[91mGitHub login and SSH/GPG keys\e[0m"
 while true; do
-	read -p "Do you have a SSH key associated with your github.com account?	[yes/no]" yn
+	read -p "Do you have a SSH key associated with your github.com account?	[yes/no] " yn
     case $yn in
         [Yy]* ) git remote set-url origin git@github.com:$github_user/$project_name.git;break;;
         [Nn]* ) echo "Enter your GitHub username and password below";break;;
@@ -57,7 +57,7 @@ echo ""
 # Setup Python-venv and install Django
 echo -e "\e[91mPython Venv and Django\e[0m"
 while true; do
-    read -p "Do you wish to setup Python Venv and install Django into the new venv? [yes/no]" yn
+    read -p "Do you wish to setup Python Venv and install Django into the new venv? [yes/no] " yn
     case $yn in
         [Yy]* ) python3 -m venv django_venv;source django_venv/bin/activate;pip install django;deactivate;break;;
         [Nn]* ) break;;
