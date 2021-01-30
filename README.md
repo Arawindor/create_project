@@ -1,11 +1,11 @@
-# Create project automator v 1.0
+# Start project automator v 0.1
 
 This script provide a full configurator for your own brand new projects.
 
-Git and GitHub setup are included.
+Git and GitHub and other specific configurations are included.
 
-## Django new project automator
-The "new_django.sh" script configures a Git local path, a GitHub connection, setup the main branches and provides Python Venv and Django installation if required.
+## Django startproject automator
+The "new_django.sh" script configures a Git local path, a GitHub connection, configures the main branches and provides Python Venv, Django installation and Django startproject (django-admin startproject) if required.
 
     # Clone the repository
     ~$ git clone git@github.com:Arawindor/create_project.git
