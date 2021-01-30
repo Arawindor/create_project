@@ -46,12 +46,13 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+git branch -M main
 git push -u origin main
 git checkout -b develop
 git push -u origin develop
 git checkout -b feature
 git push -u origin feature
-git checkout master
+git checkout main
 echo ""
 
 # Setup Python-venv and install Django
